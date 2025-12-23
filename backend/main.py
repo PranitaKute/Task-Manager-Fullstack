@@ -5,7 +5,8 @@ from dotenv import load_dotenv
 from pydantic import BaseModel
 from typing import Optional
 import os
- 
+from fastapi.middleware.cors import CORSMiddleware
+
 
 # app = FastAPI()
 
@@ -23,6 +24,18 @@ SUPABASE_ANON_KEY = os.getenv("SUPABASE_ANON_KEY")
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_ANON_KEY)
 
 app = FastAPI()
+
+
+# Enable CORS in Backend
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],  #frontend URL
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+# The frontend and backend run on different origins, 
+# so I enabled CORS in FastAPI to allow the frontend to communicate securely.
 
 
 # task schema
