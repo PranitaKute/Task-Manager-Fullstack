@@ -25,16 +25,14 @@ The app allows users to create, view, update, and delete tasks using a modern fu
 ---
 
 ## Project Structure
+```
 task-manager-fullstack/
 ├── backend/
 ├── frontend/
 ├── screenshots/
 ├── README.md
 └── .gitignore
-
----
-
-
+```
 ---
 
 ## Backend Setup (FastAPI)
@@ -66,7 +64,6 @@ SUPABASE_ANON_KEY=your_supabase_anon_key
 uvicorn main:app --reload
 ```
 
----
 Backend runs at:
 http://127.0.0.1:8000
 
@@ -94,7 +91,6 @@ NEXT_PUBLIC_API_URL=http://127.0.0.1:8000
 npm run dev
 ```
 
----
 Frontend runs at:
 http://localhost:3000
 
@@ -118,6 +114,18 @@ create table tasks (
 ---
 
 ## Screenshots
+1. List Tasks
+<img width="1908" height="968" alt="list-tasks" src="https://github.com/user-attachments/assets/762648e8-0bb6-40ae-bf8d-7817acc87dd1" />
+
+2. Supabase Table
+<img width="1907" height="966" alt="supabase" src="https://github.com/user-attachments/assets/05d10a8b-c777-4f34-8f85-b3033492f366" />
+
+3. Create Tasks
+<img width="1901" height="479" alt="create-task" src="https://github.com/user-attachments/assets/e52e8873-81eb-4537-9465-459bc0c232bb" />
+
+4. Edit Tasks
+<img width="1902" height="968" alt="create-edit-task" src="https://github.com/user-attachments/assets/6496aeac-5526-4a5c-8e13-5b638279f007" />
+
 
 ---
 
