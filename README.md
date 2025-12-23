@@ -114,14 +114,6 @@ create table tasks (
   updated_at timestamptz default now()
 );
 ```
-## Run Project
-From root folder:
-
-```bash
-git add .
-git commit -m "Complete full-stack task manager application"
-git push
-```
 
 ---
 
